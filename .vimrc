@@ -28,7 +28,8 @@ set encoding=utf-8
 if has("gui_running")
     colorscheme desert
 else
-    colorscheme darkblue
+    colorscheme desert
+"    colorscheme darkblue
 endif
 
 " Status line
