@@ -15,8 +15,10 @@ set smartindent
 " I didn't find a good reason to not use it everywhere.
 set shiftwidth=4
 set tabstop=4
+set softtabstop=4
 set expandtab
 set smarttab
+set autoindent
 
 " Minimal number of screen lines to keep above and below the cursor.
 set scrolloff=999
@@ -40,7 +42,7 @@ set statusline+=%f\                          " filename
 set statusline+=%h%m%r%w                     " status flags
 set statusline+=\[%{strlen(&ft)?&ft:'none'}] " file type
 set statusline+=%=                           " right align remainder
-set statusline+=0x%-8B                       " character value
+" set statusline+=0x%-8B                       " character value
 set statusline+=%-14(%l,%c%V%)               " line, character
 set statusline+=%<%P                         " file position
 
@@ -73,3 +75,6 @@ set showmode
 " Error bells are displayed visually.
 set visualbell
 
+" Proper indenting and formatting
+filetype plugin indent on
+autocmd FileType python set complete+=k~/.vim/pydiction-0.5/pydiction isk+=.,(

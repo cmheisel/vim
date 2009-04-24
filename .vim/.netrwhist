@@ -1,0 +1,4 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/cheisel/local/src/django/1.0.2-fastertestpatch/django/db/models/fields'
+let g:netrw_dirhist_2='/Users/cheisel/Code/work/apps/smallurlr/trunk/sql'
