@@ -83,3 +83,9 @@ autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+
+
+augroup mkd
+ autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:>
+augroup END
+
