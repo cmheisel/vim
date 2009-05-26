@@ -78,6 +78,7 @@ set visualbell
 " Proper indenting and formatting
 filetype plugin indent on
 autocmd FileType python set complete+=k~/.vim/pydiction-0.5/pydiction isk+=.,(
+autocmd BufWrite *.{py} :call Pyflakes()
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
