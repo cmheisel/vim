@@ -71,6 +71,9 @@ set showmode
 " Error bells are displayed visually.
 set visualbell
 
+filetype on            " enables filetype detection
+filetype plugin on     " enables filetype specific plugins
+
 " Proper indenting and formatting
 filetype plugin indent on
 autocmd FileType python set complete+=k~/.vim/pydiction-0.5/pydiction isk+=.,(
