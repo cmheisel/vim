@@ -52,10 +52,6 @@ set ruler
 " Display incomplete commands.
 set showcmd
 
-" To insert timestamp, press F3.
-nmap <F3> a<C-R>=strftime("%Y-%m-%d %a %I:%M %p")<CR><Esc>
-imap <F3> <C-R>=strftime("%Y-%m-%d %a %I:%M %p")<CR>
-
 " To save, press ctrl-s.
 nmap <c-s> :w<CR>
 imap <c-s> <Esc>:w<CR>a
@@ -92,3 +88,6 @@ augroup END
 
 " Nerd tree ignore
 let NERDTreeIgnore=['\.vim$', '\~$', '\.pyc$']
+
+" Turn off toolbar
+set guioptions-=T
