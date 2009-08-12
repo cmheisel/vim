@@ -93,3 +93,6 @@ let NERDTreeIgnore=['\.vim$', '\~$', '\.pyc$']
 
 " Turn off toolbar
 set guioptions-=T
+
+" Set swp dir
+set directory=/tmp
